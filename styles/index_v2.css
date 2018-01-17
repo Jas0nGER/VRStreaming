@@ -20,6 +20,15 @@ div.background {
 div.background.gtc {
   background-image: url("https://downloads.virtualracing.org/AC/GTC%20V/SpotterTest/Spotterguide_AC_GTC.jpg");
 }
+div.background.pwc {
+  background-image: url("https://downloads.virtualracing.org/AC/GTC%20V/SpotterTest/Spotterguide_AC_GTC.jpg");
+}
+div.background.vrln {
+  background-image: url("https://downloads.virtualracing.org/AC/GTC%20V/SpotterTest/Spotterguide_AC_GTC.jpg");
+}
+div.background.plm {
+  background-image: url("https://downloads.virtualracing.org/AC/GTC%20V/SpotterTest/Spotterguide_AC_GTC.jpg");
+}
   div.central {
     top: 165px;
     left: 16px;
@@ -27,7 +36,7 @@ div.background.gtc {
     float: left; /* important */
     position: relative; /* important(so we can:absolutely position the description div */
   }
-  
+
  div.unten {
   z-index: 2;
   text-transform: uppercase;
@@ -62,12 +71,12 @@ div.unten p.spotter{
 	text-align:center;
 	font-size: 38px;
 	left:820px;
-	
+
 }
 div.unten p.spotter.black{
 	color: initial;
 	left:1000px;
-	
+
 }
 
   div.spotter {
@@ -189,7 +198,7 @@ div.GTC_number p {
   text-align: center;
   font-weight: bold;
   background-color: #E32527;
-  min-width: 40px; 
+  min-width: 40px;
   width: auto;
   margin: 0px;
   padding-left: 5px;
