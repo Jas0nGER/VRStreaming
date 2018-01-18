@@ -37,13 +37,19 @@ div.central {
   min-width: 1240px;
   height: 580px;
   position: absolute; /* important(so we can:absolutely position the description div */
+<<<<<<< HEAD
   background-color: silver;
+=======
+  background-color: black;
+
+>>>>>>> 0bacfc025d3c8aefa6717ebe48163aa0c2f188d8
 }
 
 div.line {
   width:1234px;
   height: 55px;
   float: left; /* important */
+<<<<<<< HEAD
   position:relative;
   background-color: #F0F0F0;
   margin: 3px;
@@ -83,4 +89,9 @@ div.lineelement.points {
   position: absolute;
   background-color: #3D3C3B;
   right:175px;
+=======
+  position:absolute;
+  background-color: green;
+  margin: 3px;
+>>>>>>> 0bacfc025d3c8aefa6717ebe48163aa0c2f188d8
 }
