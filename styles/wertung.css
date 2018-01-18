@@ -1,0 +1,51 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+body {
+  background: #f5f5f5;
+  /*padding: 20px;*/
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  max-width: 1920px;
+  max-height: 1080px;
+  position: relative;
+}
+
+div.background {
+  width: 1920px;
+  height: 1080px;
+}
+div.background.gtc {
+  background-image: url("https://downloads.virtualracing.org/AC/GTC%20VI/Wertung_transparent.png");
+}
+div.background.pwc {
+  background-image: url("https://downloads.virtualracing.org/AC/GTC%20V/SpotterTest/Spotterguide_AC_GTC.jpg");
+}
+div.background.vrln {
+  background-image: url("https://downloads.virtualracing.org/AC/GTC%20V/SpotterTest/Spotterguide_AC_GTC.jpg");
+}
+div.background.plm {
+  background-image: url("https://downloads.virtualracing.org/AC/GTC%20VI/Template_Fahrer_FULL.jpg");
+}
+
+div.central {
+  transform: translate(-50%, -50%);
+  left: 900px;
+  top: 500px;
+  min-width: 1240px;
+  height: 580px;
+  position: absolute; /* important(so we can:absolutely position the description div */
+  background-color: black;
+
+}
+
+div.line {
+  width:1234px;
+  height: 55px;
+  float: left; /* important */
+  position:absolute;
+  background-color: green;
+  margin: 3px;
+}
