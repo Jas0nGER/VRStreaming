@@ -54,8 +54,6 @@ div.line {
 div.lineelement {
   height: inherit;
   float: left; /* important */
-  /* position:relative;*/
-  /*background-color: gray;*/
   border-radius: inherit;
   z-index: 1;
   display: flex;
@@ -105,4 +103,73 @@ div.lineelement.points {
   background-color: #3D3C3B;
   right:175px;
   z-index: 1;
+}
+
+/* Informationen */
+div.informationen {
+  position:absolute;
+  bottom: 40px;
+  right:550px;
+  width:600px;
+  height:150px;
+  color:white;
+}
+div.wertung {
+  position: relative;
+  font-size: 70px;
+  font-weight: 900;
+}
+/* Farbendefinitionen für die verschiedenen Serien */
+
+.gtc {
+  color:#E32527;
+}
+
+.pwc {
+  color:#E32527;
+}
+.plm {
+  color:#FE4A01;
+}
+.plm_lmp{
+  color:#C00000;
+}
+.plm_rsr{
+  color:#399600;
+}
+.plm_gt4{
+  color:#0090E6;
+}
+.vrln {
+  color:#FA0505;
+}
+.VRLN_VR1{
+  color:#FA0505;
+}
+.VRLN_VR2GT{
+  color:#0000FF;
+}
+.VRLN_VR3T{
+  color:#176511;
+}
+.VRLN_VR4H{
+  color:#7F0495;
+}
+.VRLN_VR5C{
+  color:#EC5D08;
+}
+
+div.klasse {
+  position: relative;
+  font-size: 36px;
+  font-weight: 600;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+div.lauf {
+  position: relative;
+  color: #3D3C3B;
+  font-size: 24px;
+  font-weight: 600;
 }
