@@ -33,23 +33,18 @@ div.background.plm {
 div.central {
   transform: translate(-50%, -50%);
   left: 900px;
-  top: 500px;
+  top: 475px;
   min-width: 1240px;
   height: 580px;
   position: absolute; /* important(so we can:absolutely position the description div */
-<<<<<<< HEAD
-  background-color: silver;
-=======
-  background-color: black;
-
->>>>>>> 0bacfc025d3c8aefa6717ebe48163aa0c2f188d8
+  /*background-color: silver;*/
 }
 
 div.line {
+  display: flex;
   width:1234px;
   height: 55px;
   float: left; /* important */
-<<<<<<< HEAD
   position:relative;
   background-color: #F0F0F0;
   margin: 3px;
@@ -60,38 +55,54 @@ div.lineelement {
   height: inherit;
   float: left; /* important */
   /* position:relative;*/
-  background-color: gray;
+  /*background-color: gray;*/
   border-radius: inherit;
   z-index: 1;
-}
-div.lineelement p{
-  /* position: relative;*/
-  text-align: center;
-  vertical-align: top;
-  /* line-height: 55px;*/
-  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:black;
   font-size: 40px;
   font-weight: 900;
-  z-index: 2;
+}
+
+div.lineelement.upperline{
+  position: absolute;
+  text-align: left;
+  padding-left: 110px;
+  top:0px;
+  height:auto;
+  font-size:34px;
+  font-weight: 900;
+}
+div.lineelement.lowerline{
+  position: absolute;
+  text-align: left;
+  top:30px;
+  padding-left: 110px;
+  height:auto;
+  font-size:16px;
+  font-weight: 900;
 }
 div.lineelement.position {
   width: 100px;
+  color:white;
   background-color: #3D3C3B;
+  z-index: 1;
 }
 div.lineelement.difference {
   width: 210px;
   position: absolute;
+  color:white;
   background-color: #CBCACA;
   right:0px;
+  z-index: 0;
 }
 div.lineelement.points {
   width: 220px;
   position: absolute;
+  color:white;
   background-color: #3D3C3B;
   right:175px;
-=======
-  position:absolute;
-  background-color: green;
-  margin: 3px;
->>>>>>> 0bacfc025d3c8aefa6717ebe48163aa0c2f188d8
+  z-index: 1;
 }
