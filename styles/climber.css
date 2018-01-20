@@ -36,8 +36,8 @@ div.absteiger{
   min-width: 1400px;
   height: 450px;
   position: absolute; /* important(so we can:absolutely position the description div */
-  background-color: red;
-  opacity:0.3; /* transparency */
+  display: flex;
+  /*opacity:0.1; /* transparency */
   filter:alpha(opacity=30); /* IE transparency */
 }
 div.aufsteiger{
@@ -46,36 +46,133 @@ div.aufsteiger{
   min-width: 1400px;
   height: 450px;
   position: absolute; /* important(so we can:absolutely position the description div */
-  background-color: green;
-  opacity:0.3; /* transparency */
+  /*opacity:0.1; /* transparency */
   filter:alpha(opacity=30); /* IE transparency */
 }
 
 div.grid{
-  display: flex;
-  color: white;
+  color: #3D3C3B;
   position:absolute;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-around;
-  bottom: 105px;
   height: 55px;
   width: 330px;
-  background-color: silver;
+  background-color: #F0F0F0;
   font-size: 50px;
   font-weight: 900;
-  margin-right: 50px;
+}
+
+div.grid.down{
+  justify-content: flex-end;
+  bottom: 105px;
+  width:325px;
+  left:0px;
+  padding-right: 5px;
+}
+
+div.grid.up{
+  justify-content: flex-start;
+  padding-left: 5px;
+  top: 105px;
+  right:0px;
+}
+
+div.verticalline{
+  position:absolute;
+  color: white;
+  font-size: 50px;
+  font-weight: 900;
+  display: inline-flex;
+  justify-content: center;
+  width:55px;
+  height:450px;
+  background-color: red;
+  border-radius: 200px 0px;
+}
+div.verticalline.down{
+    left:330px;
+}
+div.verticalline.down>p{
+  position: relative;
+  top:240px;
+}
+div.verticalline.up>p{
+  position: relative;
+  top: 50px;
+}
+div.verticalline.up{
+    right:335px;
 }
 
 div.line {
   display: flex;
-  width:1234px;
-  height: 55px;
+  width:inherit;
   float: left; /* important */
+  height: 55px;
   position:relative;
   background-color: #F0F0F0;
-  margin: 3px;
-  border-radius: 40px 0px;
   text-transform: uppercase;
+}
+div.line.down{
+  margin-bottom: 2px;
+  border-radius: 0px 0px 100px 0px;
+}
+div.line.up{
+  justify-content: flex-end;
+  margin-top: 2px;
+  border-radius: 100px 0px 0px 0px;
+}
+div.le {
+  height: inherit;
+  float: left; /* important */
+  border-radius: inherit;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:black;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+div.le.upperline{
+  position: absolute;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  top:0px;
+  height:auto;
+  font-size:34px;
+  font-weight: 900;
+}
+div.le.lowerline{
+  position: absolute;
+  text-align: left;
+  top:30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height:auto;
+  font-size:16px;
+  font-weight: 900;
+}
+
+/*AUF/Absteigerbereich*/
+div.climbarea {
+  display: flex;
+  position: absolute;
+  width:1015px;
+  height:380px;
+}
+div.climbarea.down {
+  flex-direction: column;
+  align-items: flex-start;
+  left:386px;
+}
+div.climbarea.up {
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  bottom: 0px;
+  right:391px;
 }
 
 /* Informationen */
@@ -85,10 +182,10 @@ div.informationen {
   right:500px;
   width:700px;
   height:150px;
-  color:white;
 }
 div.wertung {
   position: relative;
+  text-align: right;
   font-size: 70px;
   font-weight: 900;
 }
@@ -134,6 +231,7 @@ div.wertung {
 
 div.lauf {
   position: relative;
+  text-align: right;
   color: #3D3C3B;
   font-size: 24px;
   font-weight: 600;
